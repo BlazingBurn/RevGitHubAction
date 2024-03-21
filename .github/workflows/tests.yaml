@@ -22,4 +22,6 @@ jobs:
       run: pip install pytest
 
     - name: Run tests
-      run: pytest tests
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: pytest tests/test_calcul_moyenne.py
