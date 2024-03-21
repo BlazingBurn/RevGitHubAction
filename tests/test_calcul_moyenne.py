@@ -1,4 +1,5 @@
-from mon_module import calculer_moyenne
+from .. import mon_module
+# from mon_module import calculer_moyenne
 
 def test_calcul_moyenne():
     assert calculer_moyenne([1, 2, 3, 4, 5]) == 3
